@@ -10,9 +10,9 @@ See [openarm_isaac_lab](https://github.com/enactic/openarm_isaac_lab) for origin
 
 We updated the visualization of bi-arm to achieve realtime smooth tracking of eef trajectories.
 
-See video
+See gif
 
-![](rl-video-step-0.mp4)
+![](openarm_ik.gif)
 
 ## License
 
