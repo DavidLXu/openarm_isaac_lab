@@ -71,10 +71,10 @@ class ReachSceneCfg(InteractiveSceneCfg):
 class CommandsCfg:
     """Command terms for the MDP."""
 
-    left_ee_pose = mdp.UniformPoseCommandCfg(
+    left_ee_pose = mdp.SmoothPoseCommandCfg(
         asset_name="robot",
         body_name=MISSING,
-        resampling_time_range=(4.0, 4.0),
+        resampling_time_range=(0.5, 0.5),
         debug_vis=True,
         ranges=mdp.UniformPoseCommandCfg.Ranges(
             pos_x=(0.15, 0.3),
@@ -86,10 +86,10 @@ class CommandsCfg:
         ),
     )
 
-    right_ee_pose = mdp.UniformPoseCommandCfg(
+    right_ee_pose = mdp.SmoothPoseCommandCfg(
         asset_name="robot",
         body_name=MISSING,
-        resampling_time_range=(4.0, 4.0),
+        resampling_time_range=(0.3, 0.3),
         debug_vis=True,
         ranges=mdp.UniformPoseCommandCfg.Ranges(
             pos_x=(0.15, 0.3),
