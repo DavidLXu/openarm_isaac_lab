@@ -10,6 +10,9 @@ See [openarm_isaac_lab](https://github.com/enactic/openarm_isaac_lab) for origin
 
 We updated the visualization of bi-arm to achieve realtime smooth tracking of eef trajectories.
 
+```bash
+python scripts/reinforcement_learning/rl_games/play.py --task Isaac-Reach-OpenArm-Bi-Play-v0  --num_envs 10 --checkpoint openarm_bi_reach.pth
+```
 See gif
 
 ![](openarm_ik.gif)
